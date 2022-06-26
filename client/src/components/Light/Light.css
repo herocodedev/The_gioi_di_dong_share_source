@@ -1,0 +1,65 @@
+.bulb {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.body-light.on .bulb {
+  background: #eee;
+  box-shadow: 0 0 50px #eee, 0 0 100px #eee, 0 0 150px #eee, 0 0 200px #eee,
+    0 0 250px #eee, 0 0 300px #eee, 0 0 350px #eee;
+}
+
+.body-light.on .bulb::before {
+  background: #eee;
+}
+
+.body-light.on .bulb::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: #eee;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.bulb span:nth-child(1) {
+  position: absolute;
+  top: -16px;
+  left: -4px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  transform: rotate(342deg);
+  border-bottom-right-radius: 40px;
+  box-shadow: 20px 20px 0 10px transparent;
+}
+
+.body-light.on .bulb span:nth-child(1) {
+  box-shadow: 20px 20px 0 10px #eee;
+}
+
+.bulb span:nth-child(2) {
+  position: absolute;
+  top: -16px;
+  right: -4px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  transform: rotate(17deg);
+  border-bottom-left-radius: 40px;
+  box-shadow: -20px 20px 0 10px transparent;
+}
+
+.body-light.on .bulb span:nth-child(2) {
+  box-shadow: -20px 20px 0 10px #eee;
+}

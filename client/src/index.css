@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.css-1e4w6be {
+  padding-top: 24px !important;
+}
+
+/* .css-i4bv87-MuiSvgIcon-root {
+  width: 0.8em !important;
+} */
